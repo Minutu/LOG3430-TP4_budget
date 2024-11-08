@@ -15,3 +15,5 @@
         run: pip install -r requirements.txt
       - name: Run tests
         run: python manage.py test
+      - name: Find first bad test
+        run: python .github/workflows/myscript.py
